@@ -1,10 +1,21 @@
-const express = require('express')
-const path = require('path')
-const PORT = process.env.PORT || 6000
+// "ejs" Partition emphasize
+const ejs  = require('ejs');
+const express = require('express');
+const path = require('path');
 
-express()
-  .use(express.static(path.join(__dirname, 'public')))
-  .set('views', path.join(__dirname, 'views'))
-  .set('view engine', 'ejs')
-  .get('/', (req, res) => res.render('pages/index'))
-  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
+
+const app = express();
+const port = process.env.PORT || 9999;
+
+// adding middelware
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname,'views/pages'));
+app.use(express.static(path.join(__dirname, 'public')));
+
+//get request here
+app.get('/', (request, response) => {
+	//
+	response.render('index')
+}) // later will move
+
+app.listen(port, function() {console.log('heard on port 9999')});
