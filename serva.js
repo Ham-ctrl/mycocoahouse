@@ -12,6 +12,9 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname,'views/pages'));
 app.use(express.static(path.join(__dirname, 'public')));
 
+//request
+app.use('/', require("./routes/routerx"));
+
 //get request here
 // later will move
 
