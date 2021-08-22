@@ -1,190 +1,112 @@
-.section {
-    padding-right: 5px;
+.sectioN { 
     padding-left: 5px;
+    padding-right: 5px;
 }
-.btn {
-    background-color: var();
-    padding-top: ;
-    padding: 10px;
+
+.heroAbout{
+    width: 100%;
+    height: 290px;
+}
+.heroAbout{
+    background-image: url("/images/learnMoreImg/Cocoa_farmeers.jpg");
+    background-size: cover;
+}
+.heroAbout {
+    padding-top: 210px;
+    /*padding-left: 100px;*/
     text-align: center;
 }
-.btn a {
-    background-color: var(--color--btn);
-    color: white;
+.heroAbout h1 {
     font-family: sans-serif;
-    font-size: 1.1rem;
-    padding: 5px;
-    border-radius: px;
-}
-.btn a:hover {
-    color: fuchsia;
-}
-.zpan span{
-    border-bottom: 5px solid var(--color--btn);
-}
-h1,
-h2,
-h3 {
-
-}
-p { 
-    color: var(--title-font-para);
-}
-
-/* hero here below is ABOUTUS*/
-/* After burger in other page is where hero is */
-.hero {
-    background-image: url("/images/Cocoa-heda.jpg");
-    background-size: cover;
-    font-family: sans-serif;
-    font-size: 1rem;
-}
-.heroHeda {
-    padding-top: 50px;
-}
-#hedaCala {
-    color: white;
-}
-.heroHeda h2 {
-    color: white;
-}
-.hero p {
+    font-size: 30px;
     color: white;
 }
 
-/*ABOUTUS*/
-.aside1 {
+/*OUR STORY*/ 
+.aside1About,
+.aside2About,
+.aside3About {
     margin-top: 40px;
 }
-.aside1_aboutUs h1 {
-    color: var(--color--backGr);
-    font-size: 1rem;
+.aside1About h1 {
+    color: var(--color--btn);
 }
-.Grid {
+.aside1About h2 {
+    font-size: 20px;
+}
+.aside1About p {
+    font-family: sans-serif;
+    color: var(--title-font-para) /*#979797*/ ;
+}
+.grid {
     display: flex;
     flex-direction: column;
-}
-.aside1 a,
-.aside3 a,
-.aside4 a {
-    text-decoration: none;
-}
-.aside1_aboutUs h2 {
-    font-size: 20px;
-    padding-top: 20px;
 }
 
 /* aside2 */
-.aside2 {
-    background-color: #e2e0e0;
-    margin-top: 50px
+.aside2About {
+    
 }
-.aside2 h1 {
-    padding-bottom: 5px;
+.aside2About {
+    background-color: #348ff6;
 }
-.aside2 h2 {
-    padding-top: 20px;
-}
-.whyGrid {
-    display: flex;
-    flex-direction: column;
-}
-
-/* aside3 Corporate*/
-.aside3 {
-    background-color: #2e5179;
-    margin-top: 100px;
-}
-.aside3 h1 {
+.aside2About h1 {
     text-align: center;
     color: white;
-}
-.aside3 p {
+    margin-bottom: 20px;
+} 
+.aside2About p {
+    font-size: ;
+    font-family: sans-serif;
     color: white;
 }
-.btn-corp {
-    margin-top: 50px;
-}
-.productGrid {
-    /*display: flex;
-    flex-direction: column;*/
+.gridObj {
     display: grid;
+    flex-direction: ;
+}
+.Obj {
+    margin: 5px;
+    padding: px;
+    border-color: var(--color--btn);
+    border-style:  solid /*dashed*/;
 }
 
-/* aside4 */
-.aside4 {
-    background-color: ;
-    margin-top: 40px;
+.aside3About {
+    text-align: ;   
 }
-.aside4 h1 {
-    text-align: center;
-    margin-bottom: 63px;
+.gridContact {
+    display: ;
+    flex-direction: ;
 }
-.aside4 h2 {
-    text-align: center;
+.asise3Sub {
+    padding: 20px;
 }
-
 
 @media screen and (min-width: 700px) {
-    .hero {
-        height: 300px;
-        padding-top: 100px;
+    .aside1About h1 {
+        padding: 10px;
     }
-    .hero h1 {}
-    .hero h2 {
-        color: var(--color--btn)
-    }
-    .hero p {
-        font-family: sans-serif;
-        font-size: 20px;
-    }
-    .heroHeda {}
-
-    /*ABOUTUS*/
-    .aside1 {
-        margin-top: 40px;
-    }
-    .Grid{
+    .grid {
         display: flex;
         flex-direction: row;
-
-        /*display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;
-        justify-content: center;*/
     }
 
-    /* aside2 */
-    .whyGrid {
+    /* aside2*/
+
+    .gridObj {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;
     }
 
-    /* aside3 Corporate*/
-    .corp {
-        max-width: 55ch;
-        margin-right:  auto;
-        margin-left:  auto;
-    }
+    /* aside3*/
 
-    /* aside4 
-    img {
-        margin: auto;
-    }*/
-    .productGrid {
+    .gridContact {
+        /*display: flex;
+        flex-direction: row;*/
+
         display: grid;
-        grid-template-columns: 30% 30% 25%;
-        grid-gap: 30px;
-        justify-content: center;
-        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;        
     }
-    /*.magiAuto img {
-        margin: auto;
-    }*/
-
-    .texCent {
-        text-align: center;
-    }
-
-} /* L*/
+}
