@@ -22,9 +22,20 @@ router.get('/contact', (req, res) =>{
 router.get( '/corps', (req, res) =>{
     res.render('corps')
 })
+
+router.get( '/cream', (req, res) =>{
+    res.render('creams.ejs')
+})
+
 router.get( '/bean', (req, res) =>{
     res.render('beans')
 })
+
+//router.get( '/butter', (req, res) =>{
+  //  res.render('butters')
+//})
+
+
 
 
 
