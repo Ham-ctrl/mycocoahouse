@@ -19,8 +19,8 @@ router.get('/contact', (req, res) =>{
 
 
 //SubRouters
-router.get( '/corp', (req, res) =>{
-    res.render('corp')
+router.get( '/corps', (req, res) =>{
+    res.render('corps')
 })
 router.get( '/bean', (req, res) =>{
     res.render('beans')
