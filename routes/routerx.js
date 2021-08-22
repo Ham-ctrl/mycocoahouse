@@ -24,7 +24,7 @@ router.get( '/corps', (req, res) =>{
 })
 
 router.get( '/cream', (req, res) =>{
-    res.render('creams.ejs')
+    res.render('cream.ejs')
 })
 
 router.get( '/bean', (req, res) =>{
