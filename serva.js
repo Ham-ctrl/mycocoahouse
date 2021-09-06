@@ -2,15 +2,30 @@
 const ejs  = require('ejs');
 const express = require('express');
 const path = require('path');
+const bodyPaser = require('body-parser');
+
+
+//Database
+const packDB = require('./database/dbform');
+packDB();
+
+const packModel = require('./modelz/models');
+packModel();
 
 
 const app = express();
-const port = process.env.PORT || 9999;
+const port = process.env.PORT || 10000;
 
 // adding middelware
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname,'views/pages'));
 app.use(express.static(path.join(__dirname, 'public')));
+
+
+//Body Parser
+app.use(express.urlencoded({extended: true}))
+app.use(express.json())
+
 
 //request
 app.use('/', require("./routes/routerx"));
