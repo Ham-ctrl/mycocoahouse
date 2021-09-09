@@ -15,7 +15,7 @@ if('geolocation' in navigator) {
             },
             body: JSON.stringify(data)
         };
-        await fetch('/routing/api', options);
+        await fetch('/api', options);
     })
 } else {
     console.log('geolocation not available')

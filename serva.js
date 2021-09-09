@@ -33,4 +33,4 @@ app.use('/', require("./routes/routerx"));
 //get request here
 // later will move
 
-app.listen(port, function() {console.log('heard on port 9999')});
+app.listen(port, function() {console.log('heard on port 1000')});

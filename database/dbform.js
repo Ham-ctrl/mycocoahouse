@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const MONGODB_URI = process.env.MONGODB_URI || " mongodb+srv://cocoaUser:cocoaUser123@cluster0.k7cda.mongodb.net/cocoaDatabase " ; //No evn straight to Config
+const MONGODB_URI = process.env.MONGODB_URI ; //No evn straight to Config
 
 module.exports = async function () {
     try { 
