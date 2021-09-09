@@ -4,8 +4,8 @@ const router  = express.Router();
 
 
 const packDB = require('../database/dbform');
-const Cocoa = require('../modelz/models');
-const packModel = require('../modelz/models');
+const Cocoa = require('../modelz/model');
+const packModel = require('../modelz/model');
 
 
 //get request here

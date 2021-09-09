@@ -9,7 +9,7 @@ const bodyPaser = require('body-parser');
 const packDB = require('./database/dbform');
 packDB();
 
-const packModel = require('./modelz/models');
+const packModel = require('./modelz/model');
 packModel();
 
 
