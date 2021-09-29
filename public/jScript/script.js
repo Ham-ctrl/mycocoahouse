@@ -1,4 +1,8 @@
-if('geolocation' in navigator) {
+window.onload = geolocationFxn;
+
+function geolocationFxn(){
+    //
+    if('geolocation' in navigator) {
     console.log('geolocation available');
     navigator.geolocation.getCurrentPosition( async position => {
         const lat = position.coords.latitude;
@@ -19,4 +23,5 @@ if('geolocation' in navigator) {
     })
 } else {
     console.log('geolocation not available')
+}
 }
